@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# Export en Apk
+
+## Commande a realiser
+ * ng build --prod --aot
+ * cordova build android
+## Probleme rencontrer
+*   Error occurred during initialization of VMCould not reserve enough space for 2097152KB object heap
+    * Solution : re-télécharger un jdk 1.8 x32 et reparamétré JAVA_HOME
+* Probleme de Path gradle
+    * Download gradle et mettre le GRADLE_HOME à jour "C:\Program Files\Gradle\gradle-6.7\bin"
+* Erreur de Licence
+    * Executer "C:\Users\NOM\AppData\Local\Android\Sdk\tools\bin\sdkmanager" et accepter toutes les licences
+    * Probleme lié au nouvelle version de gradle
